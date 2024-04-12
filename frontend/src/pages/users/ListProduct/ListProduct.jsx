@@ -5,6 +5,9 @@ import { getProductList } from "../../../services/getProductList";
 import { useNavigate } from "react-router-dom";
 import image from "../../../assets/image/d90581e3850821ba84143a61a01d7fe1.jpeg"
 import { ViewProduct, TrackPageView, TrackProductView } from "../../../Tracker";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+
 import { setPageType, setEcommerceUser } from '@snowplow/browser-plugin-snowplow-ecommerce';
 
 const cx = classNames.bind(styles);
@@ -12,7 +15,7 @@ const ListProduct = () => {
   const navigateTo = useNavigate();
   const [productList, setProductList] = useState([]);
   const [originalProducts, setOriginalProducts] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   useEffect(() => {
     // Gọi hàm lấy danh sách sản phẩm từ server khi component được mount
@@ -27,7 +30,9 @@ const ListProduct = () => {
   }, []);
 
   const handleCategoryChange = (event) => {
+    
     setSelectedCategory(event.target.value);
+    console.log(selectedCategory);
   };
   const uniqueCategories = ["all", ...Array.from(new Set(productList.map((product) => product.categoryName)))];
 
@@ -60,6 +65,7 @@ const ListProduct = () => {
 
 
   return (
+    
     <div className={cx("productListUser")}>
       <div className={cx("filter")}>
         <select value={selectedCategory} onChange={handleCategoryChange}>
@@ -87,11 +93,15 @@ const ListProduct = () => {
           <input className="category" type="text" value={product.categoryName} disabled style={{ display: "none" }} />
           <div className={cx("imgItem")} onClick={() => redirectToOtherPage(product.productId, product.name, product.price, product.categoryName)}>
             {/* <img src={product.imageUrl} alt={`Item ${product.productId}`} /> */}
-            <img src={image} alt={`Item ${product.productId}`} />
-            <span>Mua hàng</span>
+            <img src={product.imageUrl} alt={`Item ${product.productId}`} />
+            <span><FontAwesomeIcon icon={faCartShopping} /></span>
+            {/*<div className={cx("cart-icon")}>
+            <FontAwesomeIcon icon="faCartShopping" />
+            </div>*/}
           </div>
           <p onClick={() => redirectToOtherPage(product.productId, product.name, product.price, product.categoryName)}>{product.name}</p>
           <span>{formatNumber(product.price)}đ</span>
+         
         </div>
       ))
       }

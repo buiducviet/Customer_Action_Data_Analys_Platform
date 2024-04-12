@@ -32,7 +32,8 @@
     .name{
         color: #060606;
         font-size:18px;
-        font-weight:450;
+        font-weight:500;
+        margin: 10px;
     }
     .number-product{
         color: #010101;
@@ -47,10 +48,11 @@
         bottom: auto;
         margin-top: 10px;
     }
+    
 }
 
 .category-item:hover {
-   
+    cursor: pointer;
     transform: scale(1.08) translateZ(0) ;
 }
 .banner {

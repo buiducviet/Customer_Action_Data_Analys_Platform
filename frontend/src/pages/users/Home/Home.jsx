@@ -54,14 +54,14 @@ const Home = () => {
       <div className={cx("list-category")}>
         <h1> Danh mục sản phẩm</h1>
         <div className={cx("list-category-content")}>
-          {/*{listCategory &&
+          {listCategory &&
             listCategory.map((category, index) => (
               <div key={category.categoryId} className={cx("category-item")} onClick={() => handleClicks(category.id)}>
-                <img src="./imgaecategory.png" alt="category image" />
+                <img src={category.imagecategoryUrl} alt="category image" />
                 <span className={cx("name")}>{category.name}</span>
               </div>
-            ))}*/}
-            <div className={cx("category-item")}>
+            ))}
+            {/*<div className={cx("category-item")}>
                 <img src="https://theme.hstatic.net/1000277297/1001091004/14/season_coll_2_img_large.png?v=393" alt="category image" />
                 <div className={cx("item-infor")}>
                   <span className={cx("name")}>Blazer</span>
@@ -94,7 +94,7 @@ const Home = () => {
                 <div className={cx("item-infor")}>
                   <span className={cx("name")}>Quần short-Chân váy</span>
                 </div>
-            </div>
+          </div>*/}
         </div>
       </div>
       <div className={cx("top-new-product")}></div>
