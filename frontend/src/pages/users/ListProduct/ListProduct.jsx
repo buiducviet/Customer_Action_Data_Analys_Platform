@@ -75,6 +75,10 @@ const ListProduct = () => {
           //value={}
           onChange={handleSearch}
         />
+         
+        
+       
+         
       </div>
       {filteredProductList.map((product) => (
         <div key={product.productId} className={cx("item")}>

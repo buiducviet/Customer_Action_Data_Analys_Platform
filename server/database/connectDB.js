@@ -11,7 +11,5 @@ const connection = mysql.createConnection({
   database: process.env.DATABASE,
   multipleStatements: true,
 });
-
 connection.connect();
-
 module.exports = connection;

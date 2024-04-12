@@ -72,16 +72,41 @@
 
   .filter {
     input {
-      margin-left: 20px;
+      /*margin-left: 20px;
       width: 20%;
-      background-image: url(https://www.w3schools.com/css/searchicon.png);
+       background-image: url(https://img.icons8.com/ios/50/search--v1.png);
+      background-color: rgb(24, 24, 24);
       background-position: 3px 5px;
       background-repeat: no-repeat;
       border-radius: 3px;
       padding: 4px 10px 4px 30px;
       transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);*/
+      
+    width: 30%;
+    height: 45px;
+    font-size: 14px;
+    padding: 0 10px;
+    margin-left: 20px;
+    background: transparent;
+    color: #363636;
+    outline: none;
+    padding: 0 50px 0 15px;
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+    background: #fff;
+    background-image: url(https://img.icons8.com/ios/50/search--v1.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) center; 
+    background-size: 30px;
+    border-radius: 9999px !important;
+    padding: 3px !important;
+    padding-left: 15px !important;
+    border: 1px solid;
+    transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   
     }
+    
 
     input:focus {
       width: 60%;

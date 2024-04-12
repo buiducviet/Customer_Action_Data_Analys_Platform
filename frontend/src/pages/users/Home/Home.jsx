@@ -1,5 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./Home.module.scss";
+import Carousel from 'react-bootstrap/Carousel';
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getCategories } from "../../../services/admin/categories";
@@ -28,18 +29,72 @@ const Home = () => {
   return (
     <div className="wrapper">
       <div className={cx("banner")}>
-        <img src="https://theme.hstatic.net/1000277297/1001091004/14/slider_1.jpg?v=135" alt="" />
+       
+       <Carousel>
+        <Carousel.Item>
+            <div>
+                <img  src="https://theme.hstatic.net/1000277297/1001091004/14/slider_1.jpg?v=135" alt="" />
+                    
+            </div>
+        </Carousel.Item>
+        <Carousel.Item>
+            <div>
+                <img  src="https://theme.hstatic.net/1000277297/1001091004/14/slider_2.jpg?v=135" alt="" />
+                    
+            </div>
+        </Carousel.Item>
+        <Carousel.Item>
+            <div>
+                <img  src="https://theme.hstatic.net/1000277297/1001091004/14/slider_1.jpg?v=393" alt="" />
+                    
+            </div>
+        </Carousel.Item>
+        </Carousel>
       </div>
       <div className={cx("list-category")}>
-        <h1> Danh Mục Sản Phẩm</h1>
+        <h1> Danh mục sản phẩm</h1>
         <div className={cx("list-category-content")}>
-          {listCategory &&
+          {/*{listCategory &&
             listCategory.map((category, index) => (
               <div key={category.categoryId} className={cx("category-item")} onClick={() => handleClicks(category.id)}>
                 <img src="./imgaecategory.png" alt="category image" />
                 <span className={cx("name")}>{category.name}</span>
               </div>
-            ))}
+            ))}*/}
+            <div className={cx("category-item")}>
+                <img src="https://theme.hstatic.net/1000277297/1001091004/14/season_coll_2_img_large.png?v=393" alt="category image" />
+                <div className={cx("item-infor")}>
+                  <span className={cx("name")}>Blazer</span>
+                </div>
+               
+            </div>
+
+            <div className={cx("category-item")}>
+                <img src="https://theme.hstatic.net/1000277297/1001091004/14/season_coll_1_img_large.png?v=393" alt="category image" />
+                <div className={cx("item-infor")}>
+                  <span className={cx("name")}>Áo dài</span>
+                </div>
+            </div>
+
+
+            <div className={cx("category-item")}>
+                <img src="https://theme.hstatic.net/1000277297/1001091004/14/season_coll_3_img_large.png?v=393" alt="category image" />
+                <div className={cx("item-infor")}>
+                  <span className={cx("name")}>Áo len</span>
+                </div>
+            </div>
+            <div className={cx("category-item")}>
+                <img src="https://theme.hstatic.net/1000277297/1001091004/14/season_coll_7_img_large.png?v=393" alt="category image" />
+                <div className={cx("item-infor")}>
+                  <span className={cx("name")}>Quần dài-Quần jeans</span>
+                </div>
+            </div>
+            <div className={cx("category-item")}>
+                <img src="https://theme.hstatic.net/1000277297/1001091004/14/season_coll_6_img_large.png?v=393" alt="category image" />
+                <div className={cx("item-infor")}>
+                  <span className={cx("name")}>Quần short-Chân váy</span>
+                </div>
+            </div>
         </div>
       </div>
       <div className={cx("top-new-product")}></div>
