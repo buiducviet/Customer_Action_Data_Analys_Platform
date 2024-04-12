@@ -15,7 +15,7 @@ const ListProduct = () => {
   const navigateTo = useNavigate();
   const [productList, setProductList] = useState([]);
   const [originalProducts, setOriginalProducts] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
     // Gọi hàm lấy danh sách sản phẩm từ server khi component được mount
@@ -34,9 +34,9 @@ const ListProduct = () => {
     setSelectedCategory(event.target.value);
     console.log(selectedCategory);
   };
-  const uniqueCategories = ["all", ...Array.from(new Set(productList.map((product) => product.categoryName)))];
+  const uniqueCategories = ["All", ...Array.from(new Set(productList.map((product) => product.categoryName)))];
 
-  const filteredProductList = selectedCategory === "all" ? productList : productList.filter((product) => product.categoryName === selectedCategory);
+  const filteredProductList = selectedCategory === "All" ? productList : productList.filter((product) => product.categoryName === selectedCategory);
 
   const formatNumber = (number) => {
     // Sử dụng Math.floor để giữ phần nguyên của số
