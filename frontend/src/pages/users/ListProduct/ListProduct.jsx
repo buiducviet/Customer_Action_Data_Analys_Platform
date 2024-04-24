@@ -99,8 +99,9 @@ const ListProduct = () => {
             <FontAwesomeIcon icon="faCartShopping" />
             </div>*/}
           </div>
+          <span class={cx("product-vendor")}>NANA SHOP</span>
           <p onClick={() => redirectToOtherPage(product.productId, product.name, product.price, product.categoryName)}>{product.name}</p>
-          <span>{formatNumber(product.price)}đ</span>
+          <span class={cx("price")}>{formatNumber(product.price)}đ</span>
          
         </div>
       ))

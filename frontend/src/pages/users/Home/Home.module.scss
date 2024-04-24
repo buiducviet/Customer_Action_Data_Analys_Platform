@@ -4,11 +4,11 @@
     align-items: center;
     justify-content: center;
 
-    h1 {
+    h2 {
     color: #000000;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1.7em;
-    margin: 30px;
+    font-size: 2em;
+    margin: 40px 0px 10px 0px;
     line-height: 1.2;
     text-align: center;
     font-weight: 400;
@@ -17,21 +17,26 @@
 .list-category-content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    word-wrap: break-word;
 }
 .category-item {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 205px;
-    height: 293px;
-    transition: transform 0.5s;
+    position: relative;
+    padding: 30px 20px;
+    transition: transform 0.64s cubic-bezier(0.15, 0.75, 0.5, 1) 0s;
+    max-width: 30%;
+    /*transition: transform 0.5s;*/
     img{
         height: 175px;
+        width: auto;
         object-fit: contain;
     }
     .name{
         color: #060606;
-        font-size:18px;
+        font-size:16px;
         font-weight:500;
         margin: 10px;
     }
@@ -67,4 +72,48 @@
   }
 
    
+}
+
+
+/*top-new-product*/
+.top-new-product {
+    padding: 20px;
+    .top-new-heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 1.7em;
+            line-height: 1.2;
+            text-align: center;
+            font-weight: 400;
+            align-items: center;
+        }
+        .heading-bar__bottom {
+            display: inline-block;
+            text-align: center;
+            font-size: 18px;
+            user-select: none;
+            position: relative;
+            padding-bottom: 5px;
+            font-weight: 300;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+        
+        .heading-bar__bottom::after{
+            background-color: #000000;
+            bottom: 0;
+            display: inline-block;
+            content: "";
+            height: 2px;
+            transition: width .2s ease-in-out;
+            width: 100px;
+        }
+    }
 }
