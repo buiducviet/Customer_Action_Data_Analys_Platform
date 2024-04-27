@@ -1,14 +1,13 @@
 import classNames from "classnames/bind";
-import styles from "./Home.module.scss";
-import Carousel from 'react-bootstrap/Carousel';
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import styles from "./Home.module.scss";
+import Carousel from 'react-bootstrap/Carousel';
+
+import Slider from "react-slick";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getCategories } from "../../../services/admin/categories";
-
-
 const cx = classNames.bind(styles);
 const Home = () => {
   const [listCategory, setlistcategory] = useState([]);
@@ -30,13 +29,14 @@ const Home = () => {
     Navigate(`/listProduct`);
   };
   const settings = {
+    className: "gallery",
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 6,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    /*autoplay: true,
+    autoplaySpeed: 2000,*/
     responsive: [
       {
         breakpoint: 1200,
@@ -83,16 +83,28 @@ const Home = () => {
         <h2> Danh mục sản phẩm</h2>
         
         <div className={cx("list-category-content")}>
-        
-          {listCategory &&
+        <Slider {...settings}>
+           {listCategory &&
             listCategory.map((category, index) => (
+            
               <div key={category.categoryId} className={cx("category-item")} onClick={() => handleClicks(category.id)}>
                 <img src={category.imagecategoryUrl} alt="category image" />
                 <span className={cx("name")}>{category.name}</span>
               </div>
-            ))}
-          
+             
+            ))} 
+            {/* <div  className={cx("category-item")} onClick={() => handleClicks(category.id)}>
+                <img src="https://theme.hstatic.net/1000277297/1001091004/14/season_coll_2_img_large.png?v=393" alt="category image" />
+                <span className={cx("name")}>Ao khoac</span>
+            </div>
+            <div  className={cx("category-item")} onClick={() => handleClicks(category.id)}>
+              <img src="https://theme.hstatic.net/1000277297/1001091004/14/season_coll_2_img_large.png?v=393" alt="category image" />
+              <span className={cx("name")}>Ao khoac</span>
+            </div>
+ */}
+          </Slider>
         </div>
+        
       </div>
       <div className={cx("top-new-product")}>
           <div className={cx("top-new-heading")}>

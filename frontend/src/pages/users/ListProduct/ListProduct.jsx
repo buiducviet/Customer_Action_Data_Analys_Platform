@@ -16,6 +16,7 @@ const ListProduct = () => {
   const [productList, setProductList] = useState([]);
   const [originalProducts, setOriginalProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [sortBy, setSortBy] = useState(""); // State để lưu trữ loại sắp x
 
   useEffect(() => {
     // Gọi hàm lấy danh sách sản phẩm từ server khi component được mount
@@ -29,11 +30,7 @@ const ListProduct = () => {
       .catch((error) => console.error("Error fetching product list:", error));
   }, []);
 
-  const handleCategoryChange = (event) => {
-    
-    setSelectedCategory(event.target.value);
-    console.log(selectedCategory);
-  };
+  
   const uniqueCategories = ["All", ...Array.from(new Set(productList.map((product) => product.categoryName)))];
 
   const filteredProductList = selectedCategory === "All" ? productList : productList.filter((product) => product.categoryName === selectedCategory);
@@ -55,12 +52,33 @@ const ListProduct = () => {
     // TrackProductView(productName, Number(productPrice), String(productId), categoryName)
   };
 
+
+  const handleCategoryChange = (event) => {
+    
+    setSelectedCategory(event.target.value);
+    console.log(selectedCategory);
+  };
+  const handleSortChange = (event) => {
+    setSortBy(event.target.value);
+  };
+  const sortedProductList = [...productList];
+  if (sortBy === "priceAsc") {
+    sortedProductList.sort((a, b) => a.price - b.price);
+  } else if (sortBy === "priceDesc") {
+    sortedProductList.sort((a, b) => b.price - a.price);
+  } else if (sortBy === "nameAsc") {
+    sortedProductList.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sortBy === "nameDesc") {
+    sortedProductList.sort((a, b) => b.name.localeCompare(a.name));
+  }
+  
   function handleSearch(e) {
     const filterData = originalProducts.filter((product) => {
       return product.name.toLowerCase().includes(e.target.value.toLowerCase());
     });
     setProductList(filterData);
   }
+  
 
 
 
@@ -75,18 +93,21 @@ const ListProduct = () => {
             </option>
           ))}
         </select>
+        <select value={sortBy} onChange={handleSortChange}> {/* Thêm dropdown để chọn loại sắp xếp */}
+          <option value="">No sorting</option>
+          <option value="priceAsc">Price: Low to High</option>
+          <option value="priceDesc">Price: High to Low</option>
+          <option value="nameAsc">Name: A to Z</option>
+          <option value="nameDesc">Name: Z to A</option>
+        </select>
         <input
           type="text"
           placeholder="Tìm kiếm theo tên sản phẩm"
           //value={}
           onChange={handleSearch}
         />
-         
-        
-       
-         
       </div>
-      {filteredProductList.map((product) => (
+      {sortedProductList.map((product) => (
         <div key={product.productId} className={cx("item")}>
           {/* Các trường dữ liệu từ server */}
           <input className="productId" type="text" value={product.productId} disabled style={{ display: "none" }} />
