@@ -7,25 +7,28 @@ import image from "../../../assets/image/d90581e3850821ba84143a61a01d7fe1.jpeg"
 import { ViewProduct, TrackPageView, TrackProductView } from "../../../Tracker";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-
+import { useParams } from "react-router-dom";
 import { setPageType, setEcommerceUser } from '@snowplow/browser-plugin-snowplow-ecommerce';
 
 const cx = classNames.bind(styles);
 const ListProduct = () => {
   const navigateTo = useNavigate();
+  const { category_id } = useParams();
   const [productList, setProductList] = useState([]);
   const [originalProducts, setOriginalProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortBy, setSortBy] = useState(""); // State để lưu trữ loại sắp x
-
+  console.log(category_id);
   useEffect(() => {
     // Gọi hàm lấy danh sách sản phẩm từ server khi component được mount
-    getProductList()
+    getProductList(category_id)
       .then((data) => {
         // Loại bỏ các sản phẩm có tên trùng lặp
         const uniqueProducts = Array.from(new Set(data.data.map((product) => product.name))).map((name) => data.data.find((product) => product.name === name));
         setProductList(uniqueProducts);
         setOriginalProducts(uniqueProducts)
+        console.log(category_id);
+        console.log(data);
       })
       .catch((error) => console.error("Error fetching product list:", error));
   }, []);
@@ -53,11 +56,11 @@ const ListProduct = () => {
   };
 
 
-  const handleCategoryChange = (event) => {
+  /* const handleCategoryChange = (event) => {
     
     setSelectedCategory(event.target.value);
     console.log(selectedCategory);
-  };
+  }; */
   const handleSortChange = (event) => {
     setSortBy(event.target.value);
   };
@@ -85,14 +88,17 @@ const ListProduct = () => {
   return (
     
     <div className={cx("productListUser")}>
+      {/* <div className={cx("category_name")}>
+        <h2></h2>
+      </div> */}
       <div className={cx("filter")}>
-        <select value={selectedCategory} onChange={handleCategoryChange}>
+        {/* <select value={selectedCategory} onChange={handleCategoryChange}>
           {uniqueCategories.map((category) => (
             <option key={category} value={category}>
               {category}
             </option>
           ))}
-        </select>
+        </select> */}
         <select value={sortBy} onChange={handleSortChange}> {/* Thêm dropdown để chọn loại sắp xếp */}
           <option value="">No sorting</option>
           <option value="priceAsc">Price: Low to High</option>

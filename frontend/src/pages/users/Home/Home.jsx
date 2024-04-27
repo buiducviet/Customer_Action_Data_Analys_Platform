@@ -26,7 +26,7 @@ const Home = () => {
   }, []);
 
   const handleClicks = (categoryId) => {
-    Navigate(`/listProduct`);
+    Navigate(`/listProduct/${categoryId}`);
   };
   const settings = {
     className: "gallery",
@@ -87,7 +87,7 @@ const Home = () => {
            {listCategory &&
             listCategory.map((category, index) => (
             
-              <div key={category.categoryId} className={cx("category-item")} onClick={() => handleClicks(category.id)}>
+              <div key={category.categoryId} className={cx("category-item")} onClick={() => handleClicks(category.categoryId)}>
                 <img src={category.imagecategoryUrl} alt="category image" />
                 <span className={cx("name")}>{category.name}</span>
               </div>

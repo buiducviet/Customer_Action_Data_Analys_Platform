@@ -6,10 +6,10 @@ const productController = {
     try {
       const { category_id } = req.params;
       const [rows, fields] = await connection.promise().query(
-        `SELECT p.productId, p.name, p.description, p.price, p.imageUrl
-        FROM products p
-        INNER JOIN categories c ON p.categoryId = c.categoryId
-        where c.categoryId = ?
+        `SELECT *
+        FROM products 
+        WHERE
+        categoryId = ?
         `,
         [category_id]
       );

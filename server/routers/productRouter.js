@@ -5,7 +5,7 @@ const { authUser, authRoleAdmin, authRoleUser } = require("../middleware/auth");
 const productController = require("../controllers/productController");
 
 
-/*router.get("/", productController.getAllByCategory);*/
+router.get("/category/:category_id/", productController.getAllByCategory);
 router.get("/", productController.getAll);
 router.get("/:product_id", productController.getById);
 router.get("/old/:product_id/", productController.getByIdOld);
