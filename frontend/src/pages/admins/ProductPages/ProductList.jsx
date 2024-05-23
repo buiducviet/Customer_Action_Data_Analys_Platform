@@ -10,6 +10,7 @@ import { Modal, Button } from "react-bootstrap";
 import { getProductList } from "../../../services/getProductList";
 import { getCategories } from "../../../services/admin/categories";
 import { deleteProduct } from "../../../services/admin/products";
+import { getAllProduct } from "../../../services/getAllProduct";
 
 import { toast, ToastContainer } from "react-toastify";
 
@@ -29,7 +30,7 @@ const ProductList = () => {
     },
     {
       name: "Số lượng",
-      selector: (row) => quantityTotals[row.productId],
+      selector: (row) => row.quantity,/* quantityTotals[row.productId], */
       sortable: true,
     },
     {
@@ -67,8 +68,8 @@ const ProductList = () => {
 
   useEffect(() => {
     //get all products
-    async function getAllProduct() {
-      getProductList()
+    /* async function */ getAllProduct() 
+      /* getProductList() */
         .then((data) => {
           const newQuantityTotals = {};
           // Giả sử 'data' là một mảng các sản phẩm
@@ -76,7 +77,7 @@ const ProductList = () => {
           setProducts(uniqueProducts);
           setOriginalProducts(uniqueProducts);
 
-          data.data.forEach((item) => {
+          /* data.data.forEach((item) => {
             const { productId, quantity } = item;
 
             if (newQuantityTotals[productId]) {
@@ -87,12 +88,12 @@ const ProductList = () => {
           });
 
           // Cập nhật state với tổng mới
-          setQuantityTotals(newQuantityTotals);
+          setQuantityTotals(newQuantityTotals); */
         })
         .catch((error) => console.error("Error fetching product list:", error));
       //lọc theo id sản phẩm sau này thay listProduct bằng data trả về từ be
-    }
-    getAllProduct();
+    
+    /* getAllProduct(); */
 
     //get all category
     async function getAllCategory() {

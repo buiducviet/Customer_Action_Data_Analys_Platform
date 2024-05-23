@@ -32,9 +32,11 @@ const productController = {
             inner join size s
             inner join productSize d on p.productId = d.productId and s.sizeId = d.sizeId
             `*/
-            `SELECT p.productId, p.name, p.description, p.price, p.imageUrl, c.name AS categoryName
+            `SELECT p.productId, p.name, p.description, p.price, p.imageUrl, c.name AS categoryName, SUM(d.count) AS quantity
             FROM products p
             INNER JOIN categories c ON p.categoryId = c.categoryId
+            inner join productSize d on p.productId = d.productId
+            group by p.productId
             `
       );
       res.json({
