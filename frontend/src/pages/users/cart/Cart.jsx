@@ -8,6 +8,7 @@ import ModalCart from "./ModalCart";
 import { Await, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContex";
 import { getOneProduct1 } from "../../../services/getOneProduct";
+import { RemoveProduct, TrackPageView, TrackProductView } from "../../../Tracker";
 const Cart = () => {
   const { user, token } = useContext(AuthContext);
   const navigateTo = useNavigate();
@@ -33,6 +34,8 @@ const Cart = () => {
   };
 
   const handleOnSubmit = (email, productId, size, name, category, price, quantity) => {
+    RemoveProduct(name, price, productId, category, size, quantity)
+
     dispatch(deleteCartItemAction(email, productId, size, quantity, price, name, category));
   };
   const handleUpQuantity = async (quantity, email, productId, size) => {

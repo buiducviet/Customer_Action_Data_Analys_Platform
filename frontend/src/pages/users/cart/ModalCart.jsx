@@ -5,7 +5,7 @@ import "./modalCart.scss";
 import axios from "axios";
 import { createOrder } from "../../../services/order";
 import { useNavigate } from "react-router-dom";
-
+import { PurchaseProduct } from "../../../Tracker";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useDispatch } from "react-redux";
@@ -162,7 +162,7 @@ const ModalCart = ({ show, handleClose, cartItems, total, user }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+ 
     if (validateForm()) {
       // Dữ liệu cần truyền đi
       const formDataToSend = {
@@ -175,6 +175,8 @@ const ModalCart = ({ show, handleClose, cartItems, total, user }) => {
         total: total,
       };
       console.log(formDataToSend.items);
+
+      PurchaseProduct(formDataToSend.items);
       updateQuantityInAPI(cartItems)
         .then(() => console.log("Cập nhật số lượng sản phẩm thành công"))
         .catch((error) => console.error("Lỗi khi cập nhật số lượng sản phẩm:", error));

@@ -108,6 +108,7 @@ const productController = {
       const [rows, fields] = await connection.promise().query(sql, [product_id]);
       res.json({
         data: rows,
+       
       });
     } catch (error) {
       console.log(error);
@@ -118,7 +119,8 @@ const productController = {
   },
   create: async (req, res) => {
     try {
-      let { name, description, price, categoryName, imageUrl, XXL, XL, M, L, S } = req.body.name;
+      let { name, description, price, categoryName, imageUrl, XXL, XL, L, M, S } = req.body.name;
+      console.log(req.body);
       if (S == null) S = 0;
       if (M == null) M = 0;
       if (L == null) L = 0;
@@ -127,7 +129,6 @@ const productController = {
       const checkNameSql = "select name, categoryId, productId from products where name = ?";
       const categoryIdSql = "select categoryId from categories where name = ?";
       const sizeIdSql = "select sizeId from size where name = ?";
-
       const [categoryRows, categoryFields] = await connection.promise().query(categoryIdSql, [categoryName]);
       console.log(categoryRows);
       const categoryId = categoryRows[0].categoryId;
@@ -180,7 +181,8 @@ const productController = {
     } catch (error) {
       console.log(error);
       res.json({
-        error: "không thể tạo thành công sản phẩm",
+        message: "không thể tạo thành công sản phẩm",
+        errCode: 1,
       });
     }
   },

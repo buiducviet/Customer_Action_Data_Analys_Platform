@@ -48,6 +48,9 @@ function Header() {
           <div className={cx("category-item")}>
             <Link to="/">CHÍNH SÁCH</Link>
           </div>
+        {/*   <div className={cx("category-item")}>
+            <Link to="/">ĐƠN HÀNG</Link>
+          </div> */}
         </div>
         <div className={cx("user")}>
           <div>

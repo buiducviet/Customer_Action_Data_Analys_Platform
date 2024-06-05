@@ -92,6 +92,7 @@ const ProductDescription = () => {
   const handleCreateItem = () => {
     if (token && user && user.role === "user") {
       const email = user.email;
+      AddProduct(name, price, id, category, selectedSize, count)
 
       dispatch(createCartItemAction(email, id, selectedSize, count, price, name, category));
       toast.success("Sản phẩm đã được thêm vào giỏ hàng của bạn");

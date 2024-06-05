@@ -49,7 +49,7 @@ const AddProductForm = () => {
       name: Yup.string().required("Bạn chưa điền tên sản phẩm!"),
       description: Yup.string().required("Bạn chưa thêm mô tả cho sản phẩm"),
       price: Yup.string().required("Bạn chưa nhập giá cho sản phẩm"),
-      imageUrl: Yup.mixed(),
+      imageUrl: Yup.string(),
       categoryName: Yup.string().required("Bạn chưa thêm danh mục cho sản phẩm"),
       S: Yup.number().integer("Số lượng phải là số nguyên").min(0, "Số lượng không âm").required("Nhập số lượng sản phẩm"),
       M: Yup.number().integer("Số lượng phải là số nguyên").min(0, "Số lượng không âm").required("Nhập số lượng sản phẩm"),
@@ -58,21 +58,30 @@ const AddProductForm = () => {
       XXL: Yup.number().integer("Số lượng phải là số nguyên").min(0, "Số lượng không âm").required("Nhập số lượng sản phẩm"),
     }),
 
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
+      console.log("abcdefg");
+      console.log(values);
       try {
-        createProduct(values).then((data) => {
-          if (data && data.errCode === 0) {
-            toast.success("Đã thêm sản phẩm thành công");
-            navigateTo("/admin/products");
-          } else if (data && data.errCode === 1) {
-            toast.error("Sản phẩm đã tồn tại");
-          }
-        });
+        const data = await createProduct(values)
+        console.log(data);
+        console.log(data.errCode);
+      
+        if (data && data.errCode === 0) {
+          toast.success("Đã thêm sản phẩm thành công");
+          console.log("av");
+          navigateTo("/admin/products");
+        } else if (data && data.errCode === 1) {
+          toast.error("Sản phẩm đã tồn tại");
+          console.log("abct");
+        }
+          
+        
       } catch (error) {
         toast.error("Thêm sản phẩm thất bại");
         console.error("Create product fails:", error);
       }
     },
+    
   });
 
   const [categories, setCategories] = useState([]);
@@ -105,7 +114,7 @@ const AddProductForm = () => {
     getAllCategory();
   }, []);
 
-  useEffect(() => {
+ /* useEffect(() => {
     if (!formik.values.imageUrl) {
       setPreview(undefined);
       return;
@@ -124,7 +133,7 @@ const AddProductForm = () => {
     }
 
     formik.setFieldValue('imageUrl', e.target.files[0]);
-  }
+  }*/
 
   return (
     <div className={cx("container")}>
@@ -169,13 +178,13 @@ const AddProductForm = () => {
               <label htmlFor="imageUrl" className={cx("form-label")}>
                 ảnh mẫu<span> *</span>
               </label>
-              <input id="imageUrl" name="imageUrl" type="file" placeholder="Chọn ảnh sản phẩm" onChange={onSelectFile} className={cx("form-control")} />
-              {preview && (
+              <input id="imageUrl" name="imageUrl" type="text" placeholder="Link san pham" value={formik.values.imageUrl} onChange={formik.handleChange} className={cx("form-control")} />
+              {/*{preview && (
                 <div className={cx("imageArea")}>
                   <p>Ảnh mẫu sản phẩm</p>
                   <img style={{ width: "240px", height: "300px" }} src={preview}></img>
                 </div>
-              )}
+              )}*/}
               {formik.errors.imageUrl && formik.touched.imageUrl && <span className={cx("form-message")}>{formik.errors.imageUrl}</span>}
             </div>
           </div>
@@ -216,7 +225,7 @@ const AddProductForm = () => {
               <button className={cx("cancel")} onClick={handleCancel}>
                 Hủy
               </button>
-              <button className={cx("form-submit")} type="submit" value="Submit Form">
+              <button className={cx("form-submit")} type="submit" value="Submit Form" onClick={formik.onSubmit}> 
                 Tạo
               </button>
             </div>
