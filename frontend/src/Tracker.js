@@ -118,7 +118,7 @@ function PurchaseProduct(items) {
 }
 
 function CreatNewTracker() {
-    newTracker('tracking_product', 'localhost:8080', {
+    newTracker('tracking_product', 'localhost:9090', {
         appId: 'ecomerceshop',
         plugins: [SnowplowEcommercePlugin()],
         discoverRootDomain: true,
