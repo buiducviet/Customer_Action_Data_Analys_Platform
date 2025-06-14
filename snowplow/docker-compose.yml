@@ -1,18 +1,18 @@
-version: '3.3'
+version: '3.8'
 networks:
   snowplow:
+
 services:
   zookeeper:
-    container_name: zookeeper
     image: confluentinc/cp-zookeeper:latest
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
-      ZOOKEEPER_TICK_TIME: 2000
     ports:
-      - 22181:2181
+      - "2181:2181"
     networks:
       - snowplow
 
+ 
   kafka1:
     container_name: kafka1
     image: confluentinc/cp-kafka:latest
@@ -46,52 +46,6 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 2
     networks:
       - snowplow
-
-  scala-stream-collector:
-    container_name: collector
-    image: snowplow/scala-stream-collector-kafka:3.1.0
-    command: [ "--config", "/snowplow/config.hocon" ]
-    depends_on:
-      - kafka1
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./collector-config:/snowplow/
-    networks:
-      - snowplow
-
-  stream-enrich:
-    container_name: enrich
-    image: snowplow/snowplow-enrich-kafka:3.8.0
-    command:
-      [
-        "--config",
-        "/snowplow/config.hocon",
-        "--iglu-config",
-        "/snowplow/resolver.json",
-        "--enrichments",
-        "/snowplow/enrichments"
-      ]
-    depends_on:
-      - scala-stream-collector
-    volumes:
-      - ./enrich-config:/snowplow
-    networks:
-      - snowplow
-
-  iglu-server:
-    container_name: iglu-server
-    image: snowplow/iglu-server:0.10.0
-    depends_on:
-      - postgresdb
-    ports:
-      - "8181:8181"
-    volumes:
-      - ./iglu-server-config:/iglu
-    command: "--config /iglu/config.hocon"
-    networks:
-      - snowplow
-
   postgresdb:
     image: postgres
     container_name: postgres-db
@@ -106,3 +60,148 @@ services:
       - ./postgres-data:/var/lib/postgresql/data
     networks:
       - snowplow
+
+  iglu-server:
+    image: snowplow/iglu-server:0.14.1
+    depends_on:
+      - postgresdb
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./iglu-server-config/config.hocon:/iglu/config.hocon:ro
+      - ./iglu-server-config/iglu_server_config.json:/iglu/iglu_server_config.json:ro
+      - ./schemas:/schemas
+    command: "--config /iglu/config.hocon"
+    networks:
+      - snowplow
+
+  collector:
+    image: snowplow/scala-stream-collector-kafka:2.8.0
+    depends_on:
+      - kafka1
+    ports:
+      - "9090:8080"
+    command: [ "--config", "/snowplow/config.hocon" ]
+    volumes:
+      - ./collector-config:/snowplow/
+    environment:
+      COLLECTOR_INTERFACE: 0.0.0.0
+      COLLECTOR_PORT: 8080
+      STREAMS_KAFKA_TOPIC: raw-events
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+    networks:
+      - snowplow
+
+  enrich:
+    image: snowplow/snowplow-enrich-kafka:3.8.0
+    depends_on:
+      - collector
+    volumes:
+      - ./enrich-config/config.hocon:/snowplow/config.hocon:ro
+      - ./enrich-config/enrich.conf:/snowplow/enrich.conf:ro
+      - ./enrich-config/resolver.json:/snowplow/resolver.json:ro
+      - ./enrich-config/enrichments:/snowplow/enrichments:ro
+      - ./Geo:/snowplow/geo:ro
+    command: >
+      --config /snowplow/config.hocon 
+      --iglu-config /snowplow/resolver.json 
+      --enrichments /snowplow/enrichments
+    environment:
+      KAFKA_INPUT_TOPIC: raw-events
+      KAFKA_OUTPUT_TOPIC: enriched-events
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+    networks:
+      - snowplow
+
+
+  spark:
+    image: bitnami/spark:latest
+    environment:
+      SPARK_MODE: worker
+      SPARK_WORKER_MEMORY: 2G
+      SPARK_WORKER_CORES: 2
+    ports:
+      - "8082:8082"
+    volumes:
+      - ./spark:/opt/spark/app
+    networks:
+      - snowplow
+
+  metabase:
+    image: metabase/metabase
+    ports:
+      - "4000:3000"
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: postgresDB
+      MB_DB_PORT: 5432
+      MB_DB_USER: postgres
+      MB_DB_PASS: postgres
+      MB_DB_HOST: postgresdb
+    depends_on:
+      - postgresdb
+    networks:
+      - snowplow
+  kafka-connect:
+    image: confluentinc/cp-kafka-connect:7.2.1
+    container_name: kafka-connect
+    depends_on:
+      - kafka1
+      - kafka2       # nên thêm nếu bạn dùng cả 2 broker
+      - postgresdb
+    ports:
+      - "8083:8083"
+    environment:
+      CONNECT_BOOTSTRAP_SERVERS: kafka1:9092,kafka2:9093
+      CONNECT_REST_PORT: 8083
+      CONNECT_REST_ADVERTISED_HOST_NAME: kafka-connect
+      CONNECT_GROUP_ID: "kafka-connect-group"
+
+      CONNECT_CONFIG_STORAGE_TOPIC: connect-configs
+      CONNECT_OFFSET_STORAGE_TOPIC: connect-offsets
+      CONNECT_STATUS_STORAGE_TOPIC: connect-status
+
+      # 🛠 Fix replication factor errors
+      CONNECT_CONFIG_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_OFFSET_STORAGE_REPLICATION_FACTOR: 1
+      CONNECT_STATUS_STORAGE_REPLICATION_FACTOR: 1
+
+      CONNECT_KEY_CONVERTER: "org.apache.kafka.connect.storage.StringConverter"
+      CONNECT_VALUE_CONVERTER: "org.apache.kafka.connect.json.JsonConverter"
+      CONNECT_VALUE_CONVERTER_SCHEMAS_ENABLE: "false"
+
+      CONNECT_PLUGIN_PATH: "/usr/share/java,/usr/share/confluent-hub-components"
+    networks:
+      - snowplow
+  mongodb:
+    image: mongo:latest
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+    networks:
+      - snowplow
+  python-consumer:
+    container_name: python-consumer
+    build:
+      context: ./python-consumer  # hoặc đường dẫn chứa Dockerfile và parse.py
+    depends_on:
+      - kafka1
+      - mongodb
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka1:9092
+      MONGO_HOST: mongodb
+      MONGO_PORT: 27017
+      MONGO_DB: snowplow
+      MONGO_COLLECTION: events
+    ports:
+      - "5000:5000"
+    networks:
+      - snowplow
+  
+
+
+
+
+
+volumes:
+  postgres-data:

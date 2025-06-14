@@ -30,7 +30,8 @@ CREATE TABLE iglu_drafts (
 
     created_at  TIMESTAMP    NOT NULL,
     updated_at  TIMESTAMP    NOT NULL,
-    is_public   BOOLEAN      NOT NULL,
+    is_public   BOOLEAN      NOT NULL DEFAULT true,
 
     body        JSON         NOT NULL
 );
+CREATE SCHEMA IF NOT EXISTS atomic;

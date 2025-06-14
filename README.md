@@ -72,3 +72,24 @@ docker run -d -p 27017:27017 --name mymongodb mongo
 3. Run two python files in customdata folder and see the tracking result.
 
 
+metabase: buiviet@gmail.com
+            v10a;
+curl -X POST http://localhost:8083/connectors \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "postgres-sink",
+    "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+      "connection.url": "jdbc:postgresql://postgresdb:5432/postgresDB",
+      "connection.user": "postgres",
+      "connection.password": "postgres",
+      "topics": "good",
+      "insert.mode": "insert",
+      "auto.create": "true",
+      "auto.evolve": "true",
+      "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+      "value.converter.schemas.enable": "false"
+    }
+  }'
+
+  confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:latest

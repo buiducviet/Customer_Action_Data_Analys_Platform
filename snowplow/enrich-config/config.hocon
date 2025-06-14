@@ -6,7 +6,7 @@
 
   "output": {
     "good": {
-      "topicName": "enriched"
+      "topicName": "enriched-events"
       "bootstrapServers": "kafka1:9092,kafka2:9093"
     }
 

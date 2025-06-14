@@ -7,13 +7,11 @@ collector {
   port = 8080
 
   streams {
-    good {
-      name = "good"
-      brokers = "kafka2:9093, kafka1:9092" 
-    }
-    bad {
-      name = "bad"
-      brokers = "kafka2:9093, kafka1:9092"  
+    good = "good"
+    bad = "bad"
+
+    sink {
+      brokers = "kafka2:9093,kafka1:9092"   # brokers là STRING, không phải mảng
     }
   }
 }

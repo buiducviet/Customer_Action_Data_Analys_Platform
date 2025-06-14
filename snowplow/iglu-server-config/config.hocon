@@ -1,13 +1,49 @@
-repoServer {
+license {
+  accept = true
+}
+
+server {
   interface = "0.0.0.0"
-  port = "8080"
+  port = 8080
 }
 
 database {
   host = "postgresdb"
+  port = 5432
   dbname = "postgresDB"
   username = "postgres"
   password = "postgres"
+  driver = "org.postgresql.Driver"
+  connectionPool {
+    maxPoolSize = 10
+    minPoolSize = 1
+  }
 }
 
+repoServer {
+  authentication {
+    enabled = true
+    superApiKey = "bb7b7503-40d3-459c-943a-f8d31a6f5638"
+    apikeys = ["bb7b7503-40d3-459c-943a-f8d31a6f5638"]
+  }
+
+  repositories = [
+    {
+      name = "Custom Iglu Server"
+      priority = 0
+      vendorPrefixes = ["nana.shop"]
+      connection {
+        http {
+          uri = "http://iglu-server:8080"
+          apikey = "bb7b7503-40d3-459c-943a-f8d31a6f5638"
+        }
+      }
+    }
+  ]
+}
 superApiKey = "bb7b7503-40d3-459c-943a-f8d31a6f5638"
+swagger {
+  baseUrl = "http://localhost:8080"
+}
+
+debug = true

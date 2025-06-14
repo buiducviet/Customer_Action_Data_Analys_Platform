@@ -1,6 +1,6 @@
 {
     "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-    "description": "Schema for a product action event",
+    "description": "Schema for tracking product actions on Nana Shop",
     "self": {
         "vendor": "nana.shop",
         "name": "product_action",
@@ -11,17 +11,23 @@
     "properties": {
         "action": {
             "type": "string",
-            "enum": [
-                "add",
-                "remove from cart",
-                "view",
-                "purchase"
-            ],
-            "description": "Xem , them , xoa , mua san pham"
+            "enum": ["add_to_cart", "remove_from_cart", "view", "purchase"],
+            "description": "User action on the product"
+        },
+        "productId": {
+            "type": "string",
+            "description": "Unique identifier of the product"
+        },
+        "userId": {
+            "type": "string",
+            "description": "Unique identifier of the user"
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp of the action"
         }
     },
-    "required": [
-        "action"
-    ],
+    "required": ["action", "productId", "userId", "timestamp"],
     "additionalProperties": false
 }

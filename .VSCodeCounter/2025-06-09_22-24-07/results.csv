@@ -1,0 +1,192 @@
+"filename", "language", "JSON", "Python", "Shell Script", "Properties", "Markdown", "MS SQL", "Docker", "YAML", "plaintext", "JavaScript JSX", "JavaScript", "SCSS", "PostCSS", "XML", "TypeScript", "TypeScript JSX", "HTML", "comment", "blank", "total"
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\README.md", "Markdown", 0, 0, 0, 0, 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 96
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\package-lock.json", "JSON", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\.env", "Properties", 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\collector-config\collector.conf", "Properties", 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\docker-compose.yml", "YAML", 0, 0, 0, 0, 0, 0, 0, 186, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 21, 208
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\enrich-config\enrich.conf", "Properties", 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 13
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\enrich-config\enrichments\yauaa_enrichment_config.json", "JSON", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\enrich-config\resolver.json", "JSON", 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 30
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\iglu-server-config\iglu_server_config.json", "JSON", 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\iglu-server-config\init.sql", "MS SQL", 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 38
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\kafka-connect-config\jdbc-sink.json", "JSON", 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 20
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\output.txt", "plaintext", 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\parsed_output.json", "JSON", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\postgres-data\pg_hba.conf", "Properties", 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 116, 6, 129
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\postgres-data\pg_ident.conf", "Properties", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 3, 73
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\postgres-data\postgresql.auto.conf", "Properties", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 3
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\postgres-data\postgresql.conf", "Properties", 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 690, 141, 845
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\python-consumer\Dockerfile", "Docker", 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 11
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\python-consumer\parse.py", "Python", 0, 68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9, 80
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\schemas\nana.shop\event.json", "JSON", 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 27
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\test_parse.py", "Python", 0, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10, 56
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\snowplow\upload-schemas.sh", "Shell Script", 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 16
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\.eslintrc.cjs", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 1, 21
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\README.md", "Markdown", 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 9
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\index.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 2, 15
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\package-lock.json", "JSON", 6736, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6737
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\package.json", "JSON", 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 65
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\public\vite.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\App.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 56, 0, 0, 0, 0, 1, 17, 74
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\App.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 0, 0, 0, 0, 0, 0, 0, 7, 10, 87
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\Tracker.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 184, 0, 0, 0, 0, 0, 0, 3, 18, 205
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\assets\react.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\Button\Button.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 8, 68
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\Button\Button.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 111, 0, 0, 0, 0, 0, 9, 120
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\Button\Button.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 110, 0, 0, 0, 0, 0, 1, 17, 128
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\Button\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\Charts\Charts.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 55, 0, 0, 0, 0, 0, 0, 0, 1, 6, 62
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\FilterOptionSelector\FilterOptionSelector.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\FilterOptionSelector\FilterOptionSelector.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\FilterOptionSelector\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\GlobalStyles\GlobalStyles.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 5, 37
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\GlobalStyles\GlobalStyles.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 9, 40
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\GlobalStyles\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\Icons\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 358, 0, 0, 0, 0, 0, 0, 0, 0, 21, 379
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\LightTooltip\LightTooltip.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\components\Upload\ImageUploader.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 86, 0, 0, 0, 0, 0, 0, 3, 14, 103
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\config\routes.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 1, 4, 32
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\contexts\AuthContex.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 0, 0, 0, 0, 0, 0, 0, 1, 7, 85
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\index.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 0, 0, 0, 0, 0, 8, 70
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\AdminLayout\DefaultLayout\DefaultLayout.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 6, 28
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\AdminLayout\DefaultLayout\DefaultLayout.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 7
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\AdminLayout\DefaultLayout\DefaultLayout.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 2, 2, 17
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\AdminLayout\DefaultLayout\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\AdminLayout\Header\Header.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 4, 31
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\AdminLayout\Header\Header.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 0, 0, 0, 0, 0, 10, 55
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\AdminLayout\Header\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\AdminLayout\Sidebar\Sidebar.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 190, 0, 0, 0, 0, 0, 0, 0, 6, 18, 214
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\AdminLayout\Sidebar\Sidebar.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 142, 0, 0, 0, 0, 0, 1, 24, 167
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\AdminLayout\Sidebar\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\UserLayout\DefaultLayOutUser.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 4, 23
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\UserLayout\DefaultLayOutUser.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 13
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\UserLayout\Footer.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 0, 3, 30
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\UserLayout\Footer.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 0, 1, 1, 31
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\UserLayout\Header.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0, 12, 6, 103
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\layouts\UserLayout\Header.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 151, 0, 0, 0, 0, 0, 6, 22, 179
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\main.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 2, 24
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\Forbiden403\Forbiden403.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\Forbiden403\Forbiden403.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 2, 26
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\NotFound404\NotFound404.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 4, 22
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\NotFound404\NotFound404.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 1, 18
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\Analytic\Analys.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 338, 0, 0, 0, 0, 0, 0, 0, 8, 10, 356
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\Analytic\Analys.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 304, 0, 0, 0, 0, 0, 4, 46, 354
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\CategoryPages\AddCategory.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 101, 0, 0, 0, 0, 0, 2, 14, 117
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\CategoryPages\AddCategoryForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 0, 0, 0, 0, 0, 0, 0, 14, 10, 120
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\CategoryPages\CategoryList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 98, 0, 0, 0, 0, 0, 0, 0, 16, 12, 126
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\CategoryPages\CategoryList.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 4, 11, 79
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\CustomerPages\CustomTableCustomer.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 1, 4, 36
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\CustomerPages\CustomerList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 102, 0, 0, 0, 0, 0, 0, 0, 0, 12, 114
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\CustomerPages\CustomerList.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 0, 8, 7, 52
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\OrderPages\CustomTable.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 1, 3, 35
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\OrderPages\ModalOrderDetail.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 0, 0, 0, 0, 0, 0, 8, 41
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\OrderPages\ModalOrderDetail.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 41, 0, 0, 3, 44
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\OrderPages\OrderList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 127, 0, 0, 0, 0, 0, 0, 0, 10, 9, 146
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\OrderPages\OrderList.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 0, 0, 0, 0, 0, 1, 12, 93
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\ProductPages\AddProductForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 200, 0, 0, 0, 0, 0, 0, 0, 30, 24, 254
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\ProductPages\AddProductForm.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 154, 0, 0, 0, 0, 0, 3, 19, 176
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\ProductPages\CustomTable.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 1, 3, 35
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\ProductPages\ProductList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 173, 0, 0, 0, 0, 0, 0, 0, 21, 20, 214
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\ProductPages\ProductList.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 98, 0, 0, 0, 0, 0, 19, 16, 133
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\ProductPages\UpdateProductForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 188, 0, 0, 0, 0, 0, 0, 0, 3, 19, 210
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\ProductPages\UpdateProductForm.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 0, 0, 0, 0, 0, 3, 21, 174
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\StorePages\AddStoreForm.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 215, 0, 0, 0, 0, 0, 0, 0, 12, 16, 243
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\StorePages\AddStoreForm.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 116, 0, 0, 0, 0, 0, 0, 18, 134
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\StorePages\StoreList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 114, 0, 0, 0, 0, 0, 0, 0, 15, 13, 142
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\admins\StorePages\StoreList.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 59, 0, 0, 0, 0, 0, 3, 11, 73
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\auths\Login\Login.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 92, 0, 0, 0, 0, 0, 0, 0, 5, 12, 109
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\auths\Login\Login.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 93, 0, 0, 0, 0, 0, 1, 40, 134
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\auths\Login\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\auths\Signup\Signup.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 99, 0, 0, 0, 0, 0, 0, 0, 3, 15, 117
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\auths\Signup\Signup.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 99, 0, 0, 0, 0, 0, 1, 42, 142
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\auths\Signup\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\FormatNumber.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 2, 1, 18
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\Home\Home.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 118, 0, 0, 0, 0, 0, 0, 0, 11, 15, 144
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\Home\Home.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 0, 0, 10, 13, 123
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\ListProductAll\ListProductAll.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 0, 0, 0, 0, 0, 0, 0, 28, 16, 135
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\ListProductAll\ListProductAll.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 115, 0, 0, 0, 0, 0, 17, 16, 148
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\ListProduct\ListProduct.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 94, 0, 0, 0, 0, 0, 0, 0, 25, 15, 134
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\ListProduct\ListProduct.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 185, 0, 0, 0, 0, 0, 0, 8, 193
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\ProductDescription\ProductDescription.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 184, 0, 0, 0, 0, 0, 0, 0, 7, 15, 206
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\ProductDescription\ProductDescription.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 222, 0, 0, 0, 0, 0, 8, 42, 272
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\Products\Product.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 95, 0, 0, 0, 0, 0, 0, 0, 8, 7, 110
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\Products\Product.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\StoreLocations\StoreLocation.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 1, 10, 79
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\StoreLocations\StoreLocation.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 17, 84
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\StoreLocations\storeData.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 0, 0, 0, 0, 0, 0, 2, 2, 84
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\cart\Cart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 93, 0, 0, 0, 0, 0, 0, 0, 6, 9, 108
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\cart\Cart.module.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 167, 0, 0, 0, 0, 0, 1, 35, 203
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\cart\ModalCart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 241, 0, 0, 0, 0, 0, 0, 0, 16, 28, 285
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\pages\users\cart\modalCart.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 0, 0, 0, 13, 113
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\reactRedux\action\actions.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 2, 7, 128
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\reactRedux\action\type.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\reactRedux\reducer\cartItemListReducer.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 46, 0, 0, 0, 0, 0, 0, 0, 0, 6, 52
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\reactRedux\reducer\rootReducer.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\reactRedux\redux\store.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\routes\index.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 52, 0, 0, 0, 0, 0, 0, 0, 3, 6, 61
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\admin\addressShop.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 0, 2, 37
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\admin\categories.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 0, 2, 33
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\admin\customer.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 2, 24
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\admin\order.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\admin\productPrice.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 7, 56
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\admin\products.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 0, 3, 29
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\auth\login.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\auth\signup.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\auth\verifyToken.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 2, 11
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\getAllProduct.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\getOneProduct.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 3, 24
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\getProductList.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\order.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 0, 0, 4, 41
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\shopAddress.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\user\cart.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 0, 4, 43
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\services\user\subProduct.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0, 2, 15
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\utils\constant.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\utils\createAuthHeader.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\src\utils\httpRequest.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 6, 24
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\frontend\vite.config.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 1, 3, 12
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\addressShopController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 76, 0, 0, 0, 0, 0, 0, 0, 4, 80
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\cartController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 114, 0, 0, 0, 0, 0, 0, 9, 17, 140
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\categoriesController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 98, 0, 0, 0, 0, 0, 0, 2, 13, 113
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\codeProvinceController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 3, 22
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\customerController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 4, 8, 203
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\eventActionStats.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 231, 0, 0, 0, 0, 0, 0, 22, 9, 262
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\maGiamGiaController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 0, 0, 0, 0, 0, 0, 3, 10, 109
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\orderController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 95, 0, 0, 0, 0, 0, 0, 8, 14, 117
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\productController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 273, 0, 0, 0, 0, 0, 0, 6, 18, 297
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\productPriceController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 82, 0, 0, 0, 0, 0, 0, 6, 8, 96
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\sizeController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 89, 0, 0, 0, 0, 0, 0, 1, 8, 98
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\stats.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 94, 0, 0, 0, 0, 0, 0, 7, 3, 104
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\controllers\variantController.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 0, 0, 0, 0, 0, 0, 7, 73
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\database\connectDB.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 2, 2, 18
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\docker-compose.yml", "YAML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\middleware\auth.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 0, 0, 0, 0, 0, 0, 9, 7, 85
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\middleware\checkLogin.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 2, 17
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\addressShop.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\cardItem.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\categories.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 1, 16
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\codeProvince.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\color.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 4, 22
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\customerModule.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\maGiamGia.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\order.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 2, 12
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\orderItem.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 2, 19
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\product.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 1, 24
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\productPrice.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0, 0, 0, 0, 0, 1, 18
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\productSize.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 1, 20
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\size.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 1, 11
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\modules\variant.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 1, 19
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\package-lock.json", "JSON", 3035, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3036
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\package.json", "JSON", 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 25
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\addressShopRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 4, 14
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\cartRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\categoriesRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 3, 13
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\codeProvinceRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 4, 4, 13
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\customerRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 3, 17
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\eventActionStatsRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 1, 2, 14
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\maGiamGiaRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 4, 14
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\orderRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 2, 4, 15
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\productPriceRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 6, 8, 24
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\productRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 2, 5, 20
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\routers\sizeRouter.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 4, 14
+"c:\Users\Duc Viet\Documents\Đatn\Customer_Action_Data_Analys_Platform\website\server\server.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 0, 0, 4, 7, 60
+"Total", "-", 9962, 110, 11, 46, 75, 33, 7, 186, 7, 4343, 2568, 2919, 268, 2, 93, 41, 13, 1370, 1529, 23583

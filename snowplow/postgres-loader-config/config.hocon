@@ -1,0 +1,18 @@
+input {
+  type = "Kafka"
+  brokers = "kafka1:9092"
+  topic = "enriched-events"
+  groupId = "postgres-loader"
+}
+
+output {
+  good {
+    type = "postgres"
+    host = "postgresdb"
+    sslMode = "disable"
+    database = "postgresDB"
+    username = "postgres"
+    password = "postgres"
+    schema = "atomic"
+  }
+}
